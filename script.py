@@ -6,7 +6,7 @@ from pdf2image import convert_from_path
 # paths
 desktop_dir = os.path.join(os.path.expanduser('~'), "Desktop")
 source_dir = os.path.join(desktop_dir, "Resume Automated")
-website_dir = os.path.join(os.path.expanduser('~'), 'vscode', 'personal_website_2')
+website_dir = os.path.join(os.path.expanduser('~'), 'vscode', 'personal_website_2')  # directory for my website repo
 resume_dir = os.path.join(website_dir, 'public', 'resume')  # final directory
 
 # new filenames
@@ -22,7 +22,7 @@ git_add = ["git", "add", resume_dest, png_dest]
 git_commit = ["git", "commit", "-m", "Update resume (script)"]
 git_push = ["git", "push", "origin", "main"]  # push to remote main branch
 
-def find_pdf_file(directory):
+def find_pdf_file(directory):  # find first PDF file in directory
     for file_name in os.listdir(directory):
         if file_name.endswith('.pdf'):
             return file_name
@@ -61,7 +61,7 @@ if resume_filename:
             print("Changes pushed to remote repository.")
         except Exception as e:
             print(f"An error occurred when performing git commands: {e}")
-            
+
     else:
         print('Failed to convert PDF to PNG.')
 

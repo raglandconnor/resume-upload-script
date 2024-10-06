@@ -1,0 +1,5 @@
+# python virtual environment
+.venv
+
+# invisible MacOS files
+.DS_Store

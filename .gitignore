@@ -3,3 +3,6 @@
 
 # invisible MacOS files
 .DS_Store
+
+# pdfs
+*pdf

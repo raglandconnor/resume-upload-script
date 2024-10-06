@@ -4,5 +4,5 @@
 # invisible MacOS files
 .DS_Store
 
-# pdfs
+# ignore pdfs in script directory
 *pdf

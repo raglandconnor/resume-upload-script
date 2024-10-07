@@ -10,7 +10,7 @@ website_dir = os.path.join(os.path.expanduser('~'), 'vscode', 'personal_website_
 resume_dir = os.path.join(website_dir, 'public', 'resume')  # final directory
 
 # new filenames
-new_resume_filename = "raglandconnor_resume.pdf"
+new_resume_filename = "raglandconnor-resume.pdf"
 new_png_filename = "raglandconnor-resume-img.png"
 
 # new paths
